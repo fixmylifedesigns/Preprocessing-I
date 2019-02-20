@@ -226,8 +226,11 @@ body .bottom table tr th {
   padding: 2px 0;
 }
 body footer {
+  margin-top: 30px;
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
   background: grey;
   padding: 20px;
   font-size: 13px;
