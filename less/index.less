@@ -163,70 +163,90 @@ body {
     display: flex;
   }
   .top {
-    background-color: lightgray;
+    background-color: rgb(223, 224, 224);
     width: 100%;
     height: auto;
     padding: 40px 30px;
 
     h1 {
-	  font-size: 40px;
-	}
- 	.first-line {
-	padding:10px 0;
-	margin:0 0 15px 0;
-	border-bottom:1px solid lightcyan;
-	}
-	.second-line {
-		font-size: 16x;
-		border:1px solid red;
-		text-inheight:2px ;
-		margin-bottom:20px;
-	}
-	button{
-		color:white;
-		background:grey;
-		font-size:14px;
-		padding:7px 5%;
-		border-radius: 15%;
-		cursor: pointer;
-		display:block;
-	}
+      padding-top: 5px;
+      font-size: 40px;
+    }
+    .first-line {
+      padding: 10px 0;
+      margin: 0 0 15px 0;
+      border-bottom: 1px solid rgb(156, 156, 156);
+    }
+    .second-line {
+      font-size: 16x;
+      margin-bottom: 20px;
+      font-size: 13px;
+    }
+    button {
+      color: white;
+      background: grey;
+      font-size: 14px;
+      padding: 6px 10px;
+      border-radius: 3px;
+      cursor: pointer;
+      display: block;
+      font-weight: bold;
+    }
   }
-  .middle{
-	  display:flex;
-	  flex-direction: row;
-	  justify-content:space-between;
+  .middle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 
-	  .boxes{
-		padding:30px 0;
-		width:49%;
-		h2{
-			font-size:30px;
-			font-weight:bold;
-			padding-bottom:10px;
-		}
-		h3{
-			font-size:20px;
-			font-weight:bold;
-			padding-bottom:10px;
-		}
-		li{
-			font-size:13px;
-			padding:10px;
-			border: 1px solid lightgrey
-		}
-		p{
-			font-size:13px;
-		}
-	  }
+    .boxes {
+      padding: 30px 0;
+      width: 49%;
+      h2 {
+        font-size: 30px;
+        font-weight: bold;
+        padding-bottom: 10px;
+      }
+      h3 {
+        font-size: 20px;
+        font-weight: bold;
+        padding-bottom: 10px;
+      }
+      li {
+        font-size: 13px;
+        padding: 10px;
+        border: 1px solid lightgrey;
+      }
+      p {
+        font-size: 13px;
+      }
+    }
   }
 
-  footer{
-	  display:flex;
-	  justify-content:center;
-	  align-text:center; 
-	  background: grey;
-	  padding:20px;
-	  font-size:13px;
+  .bottom {
+    h3 {
+      font-size: 20px;
+      font-weight: bold;
+      padding-bottom: 10px;
+    }
+    table {
+      width: 100%;
+      border-top: 1px solid lightgray;
+      border-bottom: 1px solid lightgray;
+      tr {
+		border-top: 1px solid lightgrey;
+		th{
+			padding:2px 0;
+		}
+      }
+    }
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    background: grey;
+    padding: 20px;
+    font-size: 13px;
+    color: white;
   }
 }

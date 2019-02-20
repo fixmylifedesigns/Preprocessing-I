@@ -153,33 +153,34 @@ body img {
   display: flex;
 }
 body .top {
-  background-color: lightgray;
+  background-color: #dfe0e0;
   width: 100%;
   height: auto;
   padding: 40px 30px;
 }
 body .top h1 {
+  padding-top: 5px;
   font-size: 40px;
 }
 body .top .first-line {
   padding: 10px 0;
   margin: 0 0 15px 0;
-  border-bottom: 1px solid lightcyan;
+  border-bottom: 1px solid #9c9c9c;
 }
 body .top .second-line {
   font-size: 16x;
-  border: 1px solid red;
-  text-inheight: 2px ;
   margin-bottom: 20px;
+  font-size: 13px;
 }
 body .top button {
   color: white;
   background: grey;
   font-size: 14px;
-  padding: 7px 5%;
-  border-radius: 15%;
+  padding: 6px 10px;
+  border-radius: 3px;
   cursor: pointer;
   display: block;
+  font-weight: bold;
 }
 body .middle {
   display: flex;
@@ -208,11 +209,27 @@ body .middle .boxes li {
 body .middle .boxes p {
   font-size: 13px;
 }
+body .bottom h3 {
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+body .bottom table {
+  width: 100%;
+  border-top: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+}
+body .bottom table tr {
+  border-top: 1px solid lightgrey;
+}
+body .bottom table tr th {
+  padding: 2px 0;
+}
 body footer {
   display: flex;
   justify-content: center;
-  align-text: center;
   background: grey;
   padding: 20px;
   font-size: 13px;
+  color: white;
 }
