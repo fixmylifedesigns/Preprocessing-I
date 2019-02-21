@@ -323,5 +323,9 @@ footer {
 @media (max-width: 515px) {
   footer {
     font-size: 17px;
+    flex-direction: column-reverse;
+  }
+  footer p {
+    padding-bottom: 10px;
   }
 }
