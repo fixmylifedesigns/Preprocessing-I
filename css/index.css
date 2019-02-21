@@ -144,13 +144,49 @@ header nav {
   display: flex;
   justify-content: flex-end;
 }
+@media (max-width: 515px) {
+  header nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+}
 header a {
   font-size: 12px;
   padding-right: 20px;
+  color: gray;
+}
+@media (max-width: 515px) {
+  header a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    padding: 19.5px;
+    background: white;
+    font-size: 30px;
+    border: 2px solid grey;
+    margin-left: 0;
+    color: gray;
+  }
+}
+@media (max-width: 515px) {
+  body .img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 body img {
   height: 200px;
   display: flex;
+}
+@media (max-width: 515px) {
+  body img {
+    height: 300px;
+  }
 }
 body .top {
   background-color: #dfe0e0;
@@ -162,17 +198,35 @@ body .top h1 {
   padding-top: 5px;
   font-size: 40px;
 }
-body .top .first-line {
+body .first-line {
   padding: 10px 0;
   margin: 0 0 15px 0;
   border-bottom: 1px solid #9c9c9c;
 }
-body .top .second-line {
+@media (max-width: 515px) {
+  body .first-line {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    font-size: 20px;
+  }
+}
+body .second-line {
   font-size: 16x;
   margin-bottom: 20px;
   font-size: 13px;
 }
-body .top button {
+@media (max-width: 515px) {
+  body .second-line {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    font-size: 20px;
+  }
+}
+body button {
   color: white;
   background: grey;
   font-size: 14px;
@@ -182,50 +236,80 @@ body .top button {
   display: block;
   font-weight: bold;
 }
-body .middle {
+@media (max-width: 515px) {
+  body button {
+    font-size: 30px;
+    padding: 12px 20px;
+    border-radius: 20px;
+  }
+}
+.middle {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-body .middle .boxes {
+@media (max-width: 515px) {
+  .middle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+}
+.middle .boxes {
   padding: 30px 0;
   width: 49%;
 }
-body .middle .boxes h2 {
+@media (max-width: 515px) {
+  .middle .boxes {
+    width: 100%;
+  }
+}
+.middle .boxes h2 {
   font-size: 30px;
   font-weight: bold;
   padding-bottom: 10px;
 }
-body .middle .boxes h3 {
+.middle .boxes h3 {
   font-size: 20px;
   font-weight: bold;
   padding-bottom: 10px;
 }
-body .middle .boxes li {
+.middle .boxes li {
   font-size: 13px;
   padding: 10px;
   border: 1px solid lightgrey;
 }
-body .middle .boxes p {
+@media (max-width: 515px) {
+  .middle .boxes li {
+    font-size: 20px;
+  }
+}
+.middle .boxes p {
   font-size: 13px;
 }
-body .bottom h3 {
+@media (max-width: 515px) {
+  .middle .boxes p {
+    font-size: 20px;
+  }
+}
+.bottom h3 {
   font-size: 20px;
   font-weight: bold;
   padding-bottom: 10px;
 }
-body .bottom table {
+.bottom table {
   width: 100%;
   border-top: 1px solid lightgray;
   border-bottom: 1px solid lightgray;
 }
-body .bottom table tr {
+.bottom table tr {
   border-top: 1px solid lightgrey;
 }
-body .bottom table tr th {
+.bottom table tr th {
   padding: 2px 0;
 }
-body footer {
+footer {
   margin-top: 30px;
   display: flex;
   flex-direction: row;
@@ -235,4 +319,9 @@ body footer {
   padding: 20px;
   font-size: 13px;
   color: white;
+}
+@media (max-width: 515px) {
+  footer {
+    font-size: 17px;
+  }
 }
